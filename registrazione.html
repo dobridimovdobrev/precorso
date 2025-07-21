@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form di registrazione</title>
+    <style>
+        .spazio {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Form -->
+        <form onsubmit="alert('Registrazione inviata')">
+            <!-- Nome -->
+            <div>
+                <label for="nome">Nome</label>
+            </div>
+            <div class="spazio">
+                <input type="text" name="nome" placeholder="Il tuo nome">
+            </div>
+            <!-- Cognome -->
+            <div>
+                <label for="cognome">Cognome</label>
+            </div>
+            <div class="spazio">
+                <input type="text" name="cognome" placeholder="Il tuo cognome">
+            </div>
+            <!-- Email -->
+            <div>
+                <label for="email">Email</label>
+            </div>
+            <div class="spazio">
+                <input type="email" name="email" placeholder="La tua email">
+            </div>
+            <!-- Password -->
+            <div>
+                <label for="password">Password</label>
+            </div>
+            <div class="spazio">
+                <input type="password" name="password" placeholder="La tua password">
+            </div>
+            <!-- Data di nascita -->
+            <div>
+                <label for="data di nascita">Data di nascita</label>
+            </div>
+            <div class="spazio">
+                <input type="date" name="data di nascita" placeholder="La tua data di nascita">
+            </div>
+            <!-- Telefono -->
+            <div>
+                <label for="telefono">Telefono</label>
+            </div>
+            <div class="spazio">
+                <input type="number" name="telefono" placeholder="Il tuo numero di telefono">
+            </div>
+            <!-- Stile di muscia -->
+            <div class="spazio">
+                <p>Seleziona il tuo stile di musica:</p>
+                <!-- Rap -->
+                <label for="rap">Rap</label>
+                <input type="checkbox" name="musica" id="rap" value="Rap">
+                <!-- HipHop -->
+                <label for="hiphop">HipHop</label>
+                <input type="checkbox" name="musica" id="hiphop" value="HipHop">
+                <!-- Jazz -->
+                <label for="jazz">Jazz</label>
+                <input type="checkbox" name="musica" id="jazz" value="Jazz">
+                <!-- Rock -->
+                <label for="rock">Rock</label>
+                <input type="checkbox" name="musica" id="rock" value="Rock">
+                <!-- Metal -->
+                <label for="metal">Metal</label>
+                <input type="checkbox" name="musica" id="metal" value="Metal">
+            </div>
+            <!-- Termini e condizioni -->
+            <div class="spazio">
+                <input type="checkbox" name="termini" id="termini">
+                <label for="termini">Accetto i termini e condizioni</label>
+            </div>
+            <!-- Buttone per la registrzione -->
+            <div>
+                <button type="submit">Invia registrazione</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
